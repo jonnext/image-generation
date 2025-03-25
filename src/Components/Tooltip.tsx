@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface TooltipProps {
-  message: string;
+  text: string;
   children: React.ReactNode;
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ message, children }) => {
+const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
-    <div className="relative group">
+    <div
+      className="relative flex items-center overflow-visible"
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(false)}
+      onFocus={() => setIsVisible(true)}
+      onBlur={() => setIsVisible(false)}
+    >
       {children}
-      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-[#101828] text-white text-sm rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-        {message}
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 border-4 border-transparent border-t-[#101828]" />
-      </div>
+      {isVisible && (
+        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 -translate-y-2 px-2 py-1 bg-gray-800 text-white text-xs rounded whitespace-nowrap z-50">
+          {text}
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800"></div>
+        </div>
+      )}
     </div>
   );
 };

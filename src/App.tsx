@@ -9,6 +9,7 @@ import ImageUpload from "./Components/ImageUpload";
 import screenshot from "./assets/images/screenshot-1.png";
 import AnimationComponent from "./Components/AnimationComponent";
 import ParagraphToImageConversion from "./Components/ParagraphToImageConversion";
+import ImageSelectorCarousel from "./Components/ImageSelectorCarousel";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -65,22 +66,7 @@ function App() {
           </div>
 
           <div className="w-full text-left mb-12">
-            <h3 className="text-[#101828] text-2xl font-semibold font-['Inter'] leading-8 mb-4">
-              AWS Lex capabilities
-            </h3>
-            <ParagraphToImageConversion className="text-[#344054] text-lg font-normal font-['Inter'] leading-7">
-              AWS Lex helps you build chatbots that improve customer
-              interactions. It uses Natural Language Processing to understand
-              what users say, while Intent Recognition identifies their needs.
-              Slot Filling keeps conversations flowing smoothly, and Voice
-              Interaction lets users chat using their voice with AWS Polly.
-              Plus, Analytics tracks interactions to boost performance, and
-              smart Deployment strategies ensure your bot can scale effectively.
-              Together, these features create engaging and efficient
-              conversational agents.
-            </ParagraphToImageConversion>
-
-            <div className="mt-6 border-l-4 border-[#000000] pl-4 py-2">
+            <div className="mt-6 border-l-4 border-[#000000] pl-4 py-2 bg-[#FAF9F8] rounded-tr-[16px] rounded-br-[16px]">
               <h4 className="text-[#101828] text-lg font-medium font-['Inter'] leading-7 mb-2">
                 💡 What does intent classification confidence score threshold
                 mean?

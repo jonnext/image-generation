@@ -7,8 +7,16 @@ import steps1 from "../assets/images/infographics/steps-1.png";
 import steps2 from "../assets/images/infographics/steps-2.png";
 import steps3 from "../assets/images/infographics/steps-3.png";
 import steps4 from "../assets/images/infographics/steps-4.png";
-import comicStrip from "../assets/images/infographics/generated-comic-strip.png";
 import rockEyebrow from "../assets/images/infographics/the-rock-eyebrow-gif.gif";
+// Import new images
+import venn1 from "../assets/images/infographics/venn-1.png";
+import venn2 from "../assets/images/infographics/venn-2.png";
+import venn3 from "../assets/images/infographics/venn-3.png";
+import mindmap1 from "../assets/images/infographics/mindmap-1.png";
+import mindmap2 from "../assets/images/infographics/mindmap-2.png";
+import mindmap3 from "../assets/images/infographics/mindmap-3.png";
+import mindmap4 from "../assets/images/infographics/mindmap-4.png";
+import mindmap5 from "../assets/images/infographics/mindmap-5.png";
 
 // Create an array with all infographic images
 export const infographicImages = [
@@ -20,8 +28,16 @@ export const infographicImages = [
   { src: steps2, alt: "Step-by-step process visualization - part 2" },
   { src: steps3, alt: "Step-by-step process visualization - part 3" },
   { src: steps4, alt: "Step-by-step process visualization - part 4" },
-  { src: comicStrip, alt: "Generated comic strip visualization of concepts" },
   { src: rockEyebrow, alt: "The Rock raising eyebrow reaction GIF" },
+  // Add new images
+  { src: venn1, alt: "Venn diagram visualization - type 1" },
+  { src: venn2, alt: "Venn diagram visualization - type 2" },
+  { src: venn3, alt: "Venn diagram visualization - type 3" },
+  { src: mindmap1, alt: "Mind map visualization - type 1" },
+  { src: mindmap2, alt: "Mind map visualization - type 2" },
+  { src: mindmap3, alt: "Mind map visualization - type 3" },
+  { src: mindmap4, alt: "Mind map visualization - type 4" },
+  { src: mindmap5, alt: "Mind map visualization - type 5" },
 ];
 
 /**
