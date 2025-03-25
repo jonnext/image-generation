@@ -188,8 +188,8 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
 
           {/* Image selector carousel overlay */}
           {showImageSelector && !isSkeletonVisible && (
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end justify-center pb-10 p-4 z-10">
-              <div ref={carouselRef} className="w-full max-w-[584px] relative">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center z-10">
+              <div ref={carouselRef} className="w-full relative px-6 pb-6">
                 {carousel}
               </div>
             </div>
